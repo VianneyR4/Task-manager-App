@@ -1,0 +1,44 @@
+{
+  "tasks": {
+    "253e5999-dc64-4430-81ec-1edbbcd3b890": {
+      "id": "253e5999-dc64-4430-81ec-1edbbcd3b890",
+      "title": "Create a React App",
+      "description": "Create a Frontend React App with TypeScript, Create a Frontend React App with TypeScript, Create a Frontend React App with TypeScript",
+      "status": "pending",
+      "priority": "medium",
+      "userId": "a51ee322-8aa3-47ce-a749-d035a94ecb17",
+      "createdAt": "2025-03-12T19:05:35.847Z",
+      "updatedAt": "2025-03-12T19:06:00.606Z"
+    },
+    "4a15d4dc-6a66-4fcd-a77f-add30b5d9b41": {
+      "id": "4a15d4dc-6a66-4fcd-a77f-add30b5d9b41",
+      "title": "Onboarding FullStack Guideline Task",
+      "description": "Here's an onboarding task specifically tailored for an entry-level developer working with a full-stack React, TypeScript, and Express stack:",
+      "status": "completed",
+      "priority": "medium",
+      "userId": "a51ee322-8aa3-47ce-a749-d035a94ecb17",
+      "createdAt": "2025-03-12T19:08:20.210Z",
+      "updatedAt": "2025-03-12T19:11:07.441Z"
+    },
+    "1facbfe1-ee34-4207-8ebb-60dd7a1c3d3b": {
+      "id": "1facbfe1-ee34-4207-8ebb-60dd7a1c3d3b",
+      "title": "Set up the development environment",
+      "description": "Install necessary tools such as Node.js, npm/yarn, Visual Studio Code, Git, and Postman.\n\nClone the project repository or create a new repository for the task manager application.\n\nEnsure the backend (Express) and frontend (React) are both set up to run locally.",
+      "status": "pending",
+      "priority": "medium",
+      "userId": "a51ee322-8aa3-47ce-a749-d035a94ecb17",
+      "createdAt": "2025-03-12T19:10:56.208Z",
+      "updatedAt": "2025-03-12T19:10:56.208Z"
+    }
+  },
+  "users": {
+    "a51ee322-8aa3-47ce-a749-d035a94ecb17": {
+      "id": "a51ee322-8aa3-47ce-a749-d035a94ecb17",
+      "email": "vianneyrwicha@gmail.com",
+      "password": "$2a$10$DLTI4mtEtZ6dOYW5VOaxVO77.CpAg8zWdRzZzVMOIK1E8/rTAjVOW",
+      "name": "Vianney Rwicha",
+      "createdAt": "2025-03-12T18:39:05.511Z",
+      "updatedAt": "2025-03-12T18:39:05.511Z"
+    }
+  }
+}
