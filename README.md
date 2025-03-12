@@ -1,156 +1,170 @@
 # Task Manager Application
 
-A full-stack task management application built with **React** (Frontend) and **Node.js** (Backend).
+<div align="center">
 
-## Table of Contents
-- [Structure](#structure)
-- [Setup](#setup)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Contributing](#contributing)
-- [License](#license)
+![Task Manager Logo](Frontend/src/assets/images/logos/logo.svg)
 
-## Structure
+A modern, full-stack task management application built with React and Node.js
 
-The project is divided into two main directories:
-- **`Frontend/`**: React application with TypeScript for the user interface.
-- **`Backend/`**: Node.js API server with Express and TypeScript for handling backend logic.
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-blue.svg)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18.x-green.svg)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-4.x-lightgrey.svg)](https://expressjs.com/)
 
-## Setup
+[Features](#features) • [Getting Started](#getting-started) • [Documentation](#documentation) • [Contributing](#contributing)
 
-Follow these steps to set up and run the project locally:
+</div>
 
-### 1. Install Dependencies
+## 📋 Overview
 
-Navigate to both the `Frontend` and `Backend` directories and install the required dependencies:
+Task Manager is a modern web application that helps users organize and track their tasks efficiently. Built with TypeScript, it provides a robust frontend using React and a scalable backend using Node.js.
 
-```bash
-# Frontend
-cd Frontend
-npm install
+## ✨ Features
 
-# Backend
-cd Backend
-npm install
+- **🔐 User Authentication**
+  - Secure registration and login
+  - JWT-based authentication
+  - Protected routes
 
+- **📝 Task Management**
+  - Create, read, update, and delete tasks
+  - Task categorization
+  - Priority levels
+  - Due dates
 
+- **🎨 User Interface**
+  - Modern, responsive design
+  - Intuitive user experience
+  - Dark/Light mode support
+  - Mobile-friendly layout
 
+## 🚀 Getting Started
 
+### Prerequisites
 
+- Node.js (v18 or higher)
+- npm or yarn
+- PostgreSQL database
 
+### Installation
 
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/task-manager.git
+   cd task-manager
+   ```
 
+2. **Set up the Backend**
+   ```bash
+   cd Backend
+   npm install
+   
+   # Configure environment variables
+   cp .env.example .env
+   # Edit .env with your database credentials and JWT secret
+   ```
 
-2. Set Up Environment Variables
-Copy the .env.example file to .env in both the Frontend and Backend directories.
+3. **Set up the Frontend**
+   ```bash
+   cd Frontend
+   npm install
+   
+   # Configure environment variables
+   cp .env.example .env
+   # Edit .env with your API URL
+   ```
 
-Update the environment variables in the .env files as needed.
+### Configuration
 
-Example for Backend/.env:
-
-plaintext
-Copy
+#### Backend Environment Variables (.env)
+```env
 PORT=5000
 JWT_SECRET=your_jwt_secret_key
-DATABASE_URL=your_database_url
-Example for Frontend/.env:
+DATABASE_URL=postgresql://user:password@localhost:5432/taskmanager
+NODE_ENV=development
+```
 
-plaintext
-Copy
+#### Frontend Environment Variables (.env)
+```env
 REACT_APP_API_URL=http://localhost:5000
-3. Run the Application
-Start the backend server:
+REACT_APP_API_VERSION=v1
+```
 
-bash
-Copy
-cd Backend
-npm start
-Start the frontend development server:
+### Running the Application
 
-bash
-Copy
-cd Frontend
-npm start
-The backend will run on http://localhost:5000.
+1. **Start the Backend Server**
+   ```bash
+   cd Backend
+   npm run dev
+   ```
+   The server will run on http://localhost:5000
 
-The frontend will run on http://localhost:3000.
+2. **Start the Frontend Development Server**
+   ```bash
+   cd Frontend
+   npm start
+   ```
+   The application will open in your browser at http://localhost:3000
 
-Features
-User Authentication: Secure user registration and login using JWT (JSON Web Tokens).
+## 🛠 Technology Stack
 
-Task Management: Create, read, update, and delete tasks.
+### Frontend
+- **Core**: React 18, TypeScript
+- **State Management**: React Context API
+- **Styling**: Tailwind CSS
+- **Routing**: React Router v6
+- **HTTP Client**: Axios
 
-Responsive Design: Works seamlessly on desktop and mobile devices.
+### Backend
+- **Runtime**: Node.js
+- **Framework**: Express.js
+- **Database**: PostgreSQL
+- **ORM**: Prisma
+- **Authentication**: JWT
+- **API Documentation**: Swagger/OpenAPI
 
-Protected Routes: Authenticated users can access protected routes.
+## 📖 Documentation
 
-Environment-Based Configuration: Easily switch between development and production environments.
+- [API Documentation](./Backend/docs/api.md)
+- [Frontend Architecture](./Frontend/docs/architecture.md)
+- [Database Schema](./Backend/docs/database.md)
+- [Authentication Flow](./docs/auth-flow.md)
 
-Technologies
-Frontend
-React: JavaScript library for building user interfaces.
+## 🤝 Contributing
 
-TypeScript: Adds static typing to JavaScript.
+We welcome contributions! Please follow these steps:
 
-Tailwind CSS: Utility-first CSS framework for styling.
+1. Fork the repository
+2. Create a feature branch
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. Commit your changes
+   ```bash
+   git commit -m 'Add amazing feature'
+   ```
+4. Push to the branch
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. Open a Pull Request
 
-Backend
-Node.js: JavaScript runtime for building the backend.
+## 📝 License
 
-Express: Web framework for Node.js.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-TypeScript: Adds static typing to JavaScript.
+## 👥 Authors
 
-JWT: JSON Web Tokens for authentication.
+- **Your Name** - *Initial work* - [YourGithub](https://github.com/yourusername)
 
-PostgreSQL: Relational database for storing data.
+## 🙏 Acknowledgments
 
-Contributing
-Contributions are welcome! Follow these steps to contribute:
-
-Fork the repository.
-
-Create a new branch:
-
-bash
-Copy
-git checkout -b feature/your-feature
-Commit your changes:
-
-bash
-Copy
-git commit -m "Add your feature"
-Push to the branch:
-
-bash
-Copy
-git push origin feature/your-feature
-Open a pull request.
-
-Please ensure your code follows the project's coding standards and includes appropriate tests.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-
-
-
-
-
-
-
+- React Team for the amazing frontend library
+- Node.js community for the robust backend runtime
+- All contributors who have helped this project grow
 
 ---
 
-### Key Improvements:
-1. **Added a Table of Contents**: Makes it easier to navigate the README.
-2. **Organized Setup Instructions**: Clear, step-by-step instructions for setting up the project.
-3. **Added Missing Details**: Included examples for environment variables and commands to run the application.
-4. **Improved Formatting**: Used consistent markdown syntax for headings, code blocks, and lists.
-5. **Added Technologies Section**: Highlighted the tools and frameworks used in the project.
-6. **Contributing Guidelines**: Added steps for contributing to the project.
-7. **License Section**: Included information about the project's license.
-
----
-
-You can copy and paste this into your `README.md` file. Let me know if you need further adjustments! 🚀
+<div align="center">
+Made with ❤️ by [Your Name/Team]
+</div>
