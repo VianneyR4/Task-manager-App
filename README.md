@@ -155,16 +155,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGithub](https://github.com/yourusername)
+- **Vianney RWICHA** - *Initial work* - [Link to my GitHub](https://github.com/VianneyR4)
 
 ## 🙏 Acknowledgments
 
 - React Team for the amazing frontend library
 - Node.js community for the robust backend runtime
-- All contributors who have helped this project grow
+- MPC Company for helping me grow and upskill my skills.
 
 ---
 
 <div align="center">
-Made with ❤️ by [Your Name/Team]
+Made with ❤️ by Vianney RWICHA
 </div>
